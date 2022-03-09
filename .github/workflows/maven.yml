@@ -24,3 +24,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      
+    - name: Publish report in Zephyr Scale Cloud
+      if: always()
+      run: |
+        curl -X GET https://api.zephyrscale.smartbear.com/v2/Desmensalização\AQA-T11 \
+        -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkOTEyZDAwOS0wNzY3LTNhNmItYTA4Ni03YTc2MGE3MzJiODciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdGVhbS0xNjM1ODc5NjcxOTMyLmF0bGFzc2lhbi5uZXQiLCJ1c2VyIjp7ImFjY291bnRJZCI6IjYxYmI4MTI5Nzk3NmEyMDA2YTJiODViYyJ9fSwiaXNzIjoiY29tLmthbm9haC50ZXN0LW1hbmFnZXIiLCJleHAiOjE2NzgzNjQyNTIsImlhdCI6MTY0NjgyODI1Mn0.foKwUhIPXkPjCU59vXjP-BIeMt9CdaYB-xbdJ3OOEmI' \
+        -F 'file=@results.zip' \
+        -F 'testCycle="{\"name\": \"Test cycle #${{ github.run_id }}\", \"description\": \"Cycle automated \"}";type=application/json'
