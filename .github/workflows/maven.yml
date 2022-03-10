@@ -32,4 +32,5 @@ jobs:
         -H 'Authorization: Bearer ${{ secrets.ZEPHYR_TOKEN }}' \
         -H 'Content-Length: 31116' \
         -H 'Content-Type: multipart/form-data' \
-        -F '@/trabalhofinalApiRest/target/surefire-reports/TEST-com.example.demo.client.CadastroClientTest.xml'
+        $file = new CURLFile('/trabalhofinalApiRest/target/surefire-reports/TEST-com.example.demo.client.CadastroClientTest.xml');
+        $file->setPostFilename('TEST-com.example.demo.client.CadastroClientTest.xml');
