@@ -31,3 +31,4 @@ jobs:
         curl -X POST https://api.zephyrscale.smartbear.com/v2/automations/executions/junit\?projectKey=AQA\&autoCreateTestCases\=true \
         -H 'Authorization: Bearer ${{ secrets.ZEPHYR_TOKEN }}' \
         -F 'file=@TEST-com.example.demo.client.CadastroClientTest.xml' \
+        -F 'testCycle="{\"name\": \"Test cycle automated", \"description\": \"Cycle automated\"}";type=application/json'
