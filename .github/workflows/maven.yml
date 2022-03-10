@@ -32,4 +32,4 @@ jobs:
         -H 'Authorization: Bearer ${{ secrets.ZEPHYR_TOKEN }}' \
         -H 'Content-Length: 31116' \
         -H 'Content-Type: multipart/form-data' \
-        -F 'file=@TEST-com.example.demo.client.CadastroClientTest.xml'
+        -F 'file=@/trabalhofinalApiRest/target/surefire-reports/TEST-com.example.demo.client.CadastroClientTest.xml'
