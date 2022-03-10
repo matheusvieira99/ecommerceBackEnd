@@ -42,4 +42,4 @@ jobs:
 
     - name: Test with Maven
 
-      run: mvn clean install -fn
+      run: mvn test
