@@ -30,4 +30,4 @@ jobs:
       run: |
         curl -X POST https://api.zephyrscale.smartbear.com/v2/automations/executions/junit\?projectKey=AQA\&autoCreateTestCases\=true \
         -H 'Authorization: Bearer ${{ secrets.ZEPHYR_TOKEN }}' \
-        -F 'file=@TEST-com.example.demo.client.CadastroClientTest.xml'
+        -F 'file=@ecommerceBackEnd/target/surefire-reports/TEST-com.example.demo.client.CadastroClientTest.xml'
