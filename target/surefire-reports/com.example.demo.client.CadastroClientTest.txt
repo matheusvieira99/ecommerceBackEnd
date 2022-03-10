@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.client.CadastroClientTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.539 s <<< FAILURE! - in com.example.demo.client.CadastroClientTest
+com.example.demo.client.CadastroClientTest.testeUnitario  Time elapsed: 0.499 s  <<< ERROR!
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:8082
+	at com.example.demo.client.CadastroClientTest.testeUnitario(CadastroClientTest.java:32)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at com.example.demo.client.CadastroClientTest.testeUnitario(CadastroClientTest.java:32)
+
