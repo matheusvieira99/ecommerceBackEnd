@@ -31,6 +31,7 @@ public class CadastroClientTest {
 			  .build();
 			Response response = client.newCall(request).execute();
 			assertEquals(201, response.code());
+			System.out.println("texto");
 			
 
 	}
