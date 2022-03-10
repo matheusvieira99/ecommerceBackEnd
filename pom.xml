@@ -134,7 +134,7 @@
 					<useFile>false</useFile>
 				
 				
-				
+				<testFailureIgnore>true</testFailureIgnore>
 				
 				</configuration>
 
