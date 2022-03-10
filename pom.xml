@@ -123,23 +123,36 @@
 			
 
 
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.19.1</version>
-        </plugin>
+	        <plugin>
+	
+				<artifactId>maven-surefire-plugin</artifactId>
+				
+				<version>3.0.0-M5</version>
+				
+				
+				<configuration>
+				
+				
+				<excludes>
+				
+				<exclude>excludeTest.java</exclude>
+				
+				</excludes>
+				
+				
+				<includes>
+				
+				<include>*Test.java</include>
+				
+				</includes>
+				
+				</configuration>
+
+			</plugin>
 
 		</plugins>
 	</build>
 
-	<reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>3.0.0-M5</version>
-      </plugin>
-    </plugins>
-  </reporting>
+	
 
 </project>
