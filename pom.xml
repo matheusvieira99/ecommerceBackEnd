@@ -134,18 +134,7 @@
 					<useFile>false</useFile>
 				
 				
-				<excludes>
 				
-				<exclude>excludeTest.java</exclude>
-				
-				</excludes>
-				
-				
-				<includes>
-				
-				<include>*Test.java</include>
-				
-				</includes>
 				
 				</configuration>
 
