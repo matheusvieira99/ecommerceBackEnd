@@ -30,4 +30,6 @@ jobs:
       run: |
         curl -X POST https://api.zephyrscale.smartbear.com/v2/automations/executions/junit\?projectKey=AQA\&autoCreateTestCases\=true \
         -H 'Authorization: Bearer ${{ secrets.ZEPHYR_TOKEN }}' \
-        -d '@TEST-com.example.demo.client.CadastroClientTest.xml'
+        -H 'Content-Length: 31116' \
+        -H 'Content-Type: multipart/form-data' \
+        -F '@TEST-com.example.demo.client.CadastroClientTest.xml'
