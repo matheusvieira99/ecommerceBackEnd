@@ -9,6 +9,7 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import okhttp3.MediaType;
@@ -19,7 +20,7 @@ import okhttp3.Response;
 
 public class CadastroClientTest {
 	
-	@DisplayName("Single test successful")
+	@DisplayName("Test case - test")
 	@Test
 	public void testeUnitario() throws IOException {
 	OkHttpClient client = new OkHttpClient().newBuilder()
