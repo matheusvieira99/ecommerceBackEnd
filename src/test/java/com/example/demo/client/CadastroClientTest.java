@@ -22,6 +22,7 @@ import okhttp3.Response;
 public class CadastroClientTest {
 	
 	@Test
+	@DisplayName("Test case - test")
 	public void testeUnitario() throws IOException {
 	OkHttpClient client = new OkHttpClient().newBuilder()
 			  .build();
